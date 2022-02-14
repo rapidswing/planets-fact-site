@@ -12,8 +12,9 @@ import ViewSelector from "components/ViewSelector/ViewSelector"
 import './App.scss'
 
 export default function App() {
-  const [selectedPlanet, setSelectedPlanet] = useState(2);  // Earth as default
-  const [isHamburgerActive, setIsHamburgerActive] = useState(false);
+  const [view, setView] = useState('OVERVIEW')
+  const [planet, setPlanet] = useState(2)  // Earth as default
+  const [isHamburgerActive, setIsHamburgerActive] = useState(false)
 
   useEffect(() => {
     WebFont.load({
@@ -38,7 +39,7 @@ export default function App() {
         {isHamburgerActive ?
           <PlanetMenu /> :
           <>
-            <ViewSelector />
+            <ViewSelector planet={planet} setView={setView} view={view} />
             <PlanetImage />
             <SummaryCard />
             <StatsBar />
