@@ -40,6 +40,7 @@ export default function App() {
           <PlanetMenu /> :
           <>
             <ViewSelector planet={planet} setView={setView} view={view} />
+            <div className="divider"></div>
             <PlanetImage />
             <SummaryCard />
             <StatsBar />
