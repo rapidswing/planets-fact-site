@@ -1,2 +1,47 @@
 @use 'utils/variables' as v;
 
+.summary-card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 23.5rem;
+  padding: 0 2.4rem;
+}
+
+.summary-name {
+  font-family: v.$antonio;
+  font-size: 4rem;
+  line-height: 5.2rem;
+  text-transform: uppercase;
+}
+
+.summary-content {
+  font-family: v.$spartan;
+  font-size: 1.1rem;
+  line-height: 2.2rem;
+  opacity: 80%;
+  padding-top: 1.6rem;
+  text-align: center;
+}
+
+.summary-source {
+  display: flex;
+  flex-direction: row;
+  font-family: v.$spartan;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  opacity: 0.5;
+  white-space: pre;
+
+  > a {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+  }
+}
+
+.source-new-window {
+  align-items: center;
+  display: flex;
+  padding-left: 0.8rem;
+}
