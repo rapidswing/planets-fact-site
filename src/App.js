@@ -12,6 +12,9 @@ import ViewSelector from "components/ViewSelector/ViewSelector"
 import './App.scss'
 
 export default function App() {
+  const [selectedPlanet, setSelectedPlanet] = useState(2);  // Earth as default
+  const [isHamburgerActive, setIsHamburgerActive] = useState(false);
+
   useEffect(() => {
     WebFont.load({
       google: {
@@ -20,19 +23,27 @@ export default function App() {
     })
   })
 
+  const toggleHamburger = () => {
+    setIsHamburgerActive(prev => !prev);
+  }
+
   return (
     <div className="App">
       <div className="container">
         <div className="title-hamburger">
           <Title />
-          <HamburgerMenu />
+          <HamburgerMenu toggleHamburger={toggleHamburger} />
         </div>
         <div className="divider"></div>
-        <PlanetMenu />
-        <ViewSelector />
-        <PlanetImage />
-        <SummaryCard />
-        <StatsBar />
+        {isHamburgerActive ?
+          <PlanetMenu /> :
+          <>
+            <ViewSelector />
+            <PlanetImage />
+            <SummaryCard />
+            <StatsBar />
+          </>
+        }
       </div>
     </div>
   );

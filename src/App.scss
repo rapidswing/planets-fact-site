@@ -18,7 +18,8 @@ body {
 
 .App {
   align-items: center;
-  background-color: v.$bg-color;
+  background: v.$bg-color url('../public/background-stars.svg');
+  background-size: cover;
   color: white;
   display: flex;
   flex-direction: column;
@@ -35,9 +36,10 @@ body {
 }
 
 .title-hamburger {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 1.6rem 2.4rem 0 2.4rem;
+  padding: 0 2.4rem 0 2.4rem;
 }
 
 .divider {

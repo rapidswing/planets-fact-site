@@ -1,0 +1,8 @@
+@use 'utils/variables' as v;
+
+.title {
+  font-family: v.$antonio;
+  font-size: 2.8rem;
+  letter-spacing: -0.105rem;
+  line-height: 3.6rem;
+}
