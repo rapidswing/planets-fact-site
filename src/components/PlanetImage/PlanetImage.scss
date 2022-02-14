@@ -1,5 +1,8 @@
 @use 'utils/variables' as v;
 
 .planet-image {
+  align-items: center;
+  display: flex;
   height: 30rem;
+  justify-content: center;;
 }

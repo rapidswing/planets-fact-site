@@ -1,6 +1,8 @@
 import { planets } from 'utils/constants'
 import data from 'data.json'
 
+import './PlanetImage.scss'
+
 export default function PlanetImage({ planet, view }) {
   const images = require.context('../..', true)
 
