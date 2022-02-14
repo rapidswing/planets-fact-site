@@ -8,7 +8,10 @@ export default function PlanetMenu() {
   return (
     <div className="planet-menu">
       {planets.map((planet, index) => (
-        <PlanetMenuItem index={index} />
+        <>
+          <PlanetMenuItem index={index} />
+          <div className="divider"></div>
+        </>
       ))}
     </div>
   )

@@ -1,13 +1,23 @@
 @use 'utils/variables' as v;
 
 .planet-menu-item {
+  align-items: center;
   display: grid;
   grid-template-columns: 4.5rem 1fr 0.8rem;
   grid-template-rows: 1fr;
+  padding: 2rem 0;
 }
 
 .planet-dot {
   border-radius: 1rem;
   height: 2.0rem;
   width: 2.0rem;
+}
+
+.planet-name {
+  font-family: v.$spartan;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.136rem;
+  line-height: 2.5rem;
 }
