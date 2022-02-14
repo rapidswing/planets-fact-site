@@ -6,6 +6,7 @@ import './PlanetMenuItem.scss'
 
 export default function PlanetMenuItem({ planet }) {
   return (
+    <>
     <div className="planet-menu-item" data-planet={planet} >
       <div className="planet-dot" style={{ background: planets[planet].dotColor }}></div>
       <div className="planet-name">{planets[planet].name}</div>
@@ -13,5 +14,7 @@ export default function PlanetMenuItem({ planet }) {
         <img src={Chevron} alt="Chevron" />
       </div>
     </div>
+     <div className="divider"></div>
+    </>
   )
 }

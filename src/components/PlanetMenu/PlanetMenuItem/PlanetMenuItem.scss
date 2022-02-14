@@ -28,3 +28,27 @@
 .planet-chevron {
   padding-bottom: 0.3rem;  // nudge
 }
+
+@media screen and (min-width: 768px) {
+  .planet-menu-item {
+    align-items: center;
+    display: flex;
+    padding: 0;
+  }
+  
+  .planet-dot {
+    display: none;
+  }
+
+  .planet-chevron {
+    display: none;
+  }
+
+  .planet-name {
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
+    padding: 0;
+    text-align: center;
+  }
+}

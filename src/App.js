@@ -35,10 +35,19 @@ export default function App() {
           <Title />
           <HamburgerMenu toggleHamburger={toggleHamburger} />
         </div>
-        <div className="divider"></div>
+        <div className="divider divider-1"></div>
         {isHamburgerActive ?
-          <PlanetMenu setIsHamburgerActive={setIsHamburgerActive} setPlanet={setPlanet} /> :
+          <PlanetMenu
+            className={'mobile-planet-menu'}
+            setIsHamburgerActive={setIsHamburgerActive}
+            setPlanet={setPlanet}
+          /> :
           <>
+            <PlanetMenu
+              className={'non-mobile-planet-menu'}
+              setIsHamburgerActive={setIsHamburgerActive}
+              setPlanet={setPlanet}
+            />
             <ViewSelector planet={planet} setView={setView} view={view} />
             <div className="divider"></div>
             <PlanetImage planet={planet} view={view} />
