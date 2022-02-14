@@ -1,0 +1,9 @@
+@use 'utils/variables' as v;
+
+.stats-bar {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-rows: repeat(4, 1fr);
+  margin-top: auto;
+  padding: 0 2.4rem 4.8rem 2.4rem;
+}

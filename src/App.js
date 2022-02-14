@@ -43,7 +43,7 @@ export default function App() {
             <div className="divider"></div>
             <PlanetImage planet={planet} view={view} />
             <SummaryCard planet={planet} view={view} />
-            <StatsBar />
+            <StatsBar planet={planet} />
           </>
         }
       </div>
