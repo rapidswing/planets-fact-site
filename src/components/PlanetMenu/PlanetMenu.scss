@@ -1,6 +1,7 @@
 @use 'utils/variables' as v;
 
 .planet-menu {
+  background: v.$bg-color;
   display: flex;
   flex-direction: column;
   height: 100%;
