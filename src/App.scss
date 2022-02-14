@@ -52,10 +52,24 @@ body {
 
 @media screen and (min-width: 768px) {
   .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 768px;
+    flex-basis: 100%;
 
-    & .divider-1 {
-      display: none;
+    >div {
+      flex-basis: 100%;
+    }
+
+    >.summary-card {
+      order: 5;
+      flex-basis: 50%;
+    }
+
+    >.view-selector {
+      order: 6;
+      flex-basis: 50%;
     }
   }
 
@@ -63,10 +77,26 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    order: 0;
+    order: 1;
   }
 
   .hamburger-menu {
     display: none;
+  }
+
+  .planet-menu {
+    order: 2;
+  }
+
+  .divider-1 {
+    order: 3;
+  }
+
+  .planet-image {
+    order: 4;
+  }
+
+  .stats-bar {
+    order: 7;
   }
 }

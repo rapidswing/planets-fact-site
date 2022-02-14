@@ -2,13 +2,14 @@ import './ViewSelector.scss'
 
 export default function ViewSelector({ planet, setView, view }) {
   const handleClick = (event) => {
-    if (event.target.className.includes('overview')) {
+    console.log(event);
+    if (event.target.closest('.overview')) {
       setView('OVERVIEW')
     }
-    if (event.target.className.includes('structure')) {
+    if (event.target.closest('.structure')) {
       setView('STRUCTURE')
     }
-    if (event.target.className.includes('surface')) {
+    if (event.target.closest('.surface')) {
       setView('SURFACE')
     }
   }
@@ -18,17 +19,17 @@ export default function ViewSelector({ planet, setView, view }) {
       <div 
         className={`view-option overview ${view === 'OVERVIEW' ? `active color-${planet}` : ''}`}
       >
-        OVERVIEW
+        <span className="not-for-mobile">01</span><span>OVERVIEW</span>
       </div>
       <div
         className={`view-option structure ${view === 'STRUCTURE' ? `active color-${planet}` : ''}`}
       >
-        STRUCTURE
+        <span className="not-for-mobile">02</span><span className="not-for-mobile">INTERNAL</span><span>STRUCTURE</span>
       </div>
       <div
         className={`view-option surface ${view === 'SURFACE' ? `active color-${planet}` : ''}`}
       >
-        SURFACE
+        <span className="not-for-mobile">03</span><span>SURFACE</span><span className="not-for-mobile">GEOLOGY</span>
       </div>
     </div>
   )
