@@ -42,7 +42,7 @@ export default function App() {
             <ViewSelector planet={planet} setView={setView} view={view} />
             <div className="divider"></div>
             <PlanetImage planet={planet} view={view} />
-            <SummaryCard />
+            <SummaryCard planet={planet} view={view} />
             <StatsBar />
           </>
         }
