@@ -16,6 +16,7 @@ export default function App() {
           <Title />
           <HamburgerMenu />
         </div>
+        <div className="divider"></div>
         <PlanetMenu />
         <ViewSelector />
         <PlanetImage />

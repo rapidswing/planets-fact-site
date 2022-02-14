@@ -28,7 +28,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 6.8rem 5.2rem 32.4rem 25.4rem 23.6rem;
+  grid-template-rows: 6.8rem 1px 5.2rem 32.4rem 25.4rem 23.6rem;
   height: 950px;
   width: 375px;
 }
@@ -37,4 +37,11 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 1.6rem 2.4rem 0 2.4rem;
+}
+
+.divider {
+  background: white;
+  height: 1px;
+  opacity: 0.2;
+  width: 100%;
 }
