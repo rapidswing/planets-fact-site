@@ -11,13 +11,17 @@ import './App.scss';
 export default function App() {
   return (
     <div className="App">
-      <Title />
-      <HamburgerMenu />
-      <PlanetMenu />
-      <ViewSelector />
-      <PlanetImage />
-      <SummaryCard />
-      <StatsBar />
+      <div className="container">
+        <div className="title-hamburger">
+          <Title />
+          <HamburgerMenu />
+        </div>
+        <PlanetMenu />
+        <ViewSelector />
+        <PlanetImage />
+        <SummaryCard />
+        <StatsBar />
+      </div>
     </div>
   );
 }
