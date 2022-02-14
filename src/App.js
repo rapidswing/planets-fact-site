@@ -6,6 +6,8 @@ import SummaryCard from "components/SummaryCard/SummaryCard";
 import Title from "components/Title/Title";
 import ViewSelector from "components/ViewSelector/ViewSelector";
 
+import './App.scss';
+
 export default function App() {
   return (
     <div className="App">

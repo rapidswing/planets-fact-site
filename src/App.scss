@@ -1,0 +1,23 @@
+@use 'utils/variables' as v;
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;  // setting root font size to 10px for rem
+}
+
+body {
+  color: white;
+  margin: 0;
+}
+
+.App {
+  background-color: v.$bg-color;
+  height: 950px;
+}
