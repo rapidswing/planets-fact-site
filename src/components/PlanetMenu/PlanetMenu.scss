@@ -7,7 +7,7 @@
   height: 100%;
   padding: 2.4rem;
 
-  > .divider:last-of-type {
+  > div:last-of-type > .divider {
     display: none;
   }
 }

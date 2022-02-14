@@ -25,7 +25,7 @@ export default function App() {
   })
 
   const toggleHamburger = () => {
-    setIsHamburgerActive(prev => !prev);
+    setIsHamburgerActive(prev => !prev)
   }
 
   return (
@@ -37,7 +37,7 @@ export default function App() {
         </div>
         <div className="divider"></div>
         {isHamburgerActive ?
-          <PlanetMenu /> :
+          <PlanetMenu setIsHamburgerActive={setIsHamburgerActive} setPlanet={setPlanet} /> :
           <>
             <ViewSelector planet={planet} setView={setView} view={view} />
             <div className="divider"></div>
@@ -48,5 +48,5 @@ export default function App() {
         }
       </div>
     </div>
-  );
+  )
 }

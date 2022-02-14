@@ -3,13 +3,13 @@ import './ViewSelector.scss'
 export default function ViewSelector({ planet, setView, view }) {
   const handleClick = (event) => {
     if (event.target.className.includes('overview')) {
-      setView('OVERVIEW');
+      setView('OVERVIEW')
     }
     if (event.target.className.includes('structure')) {
-      setView('STRUCTURE');
+      setView('STRUCTURE')
     }
     if (event.target.className.includes('surface')) {
-      setView('SURFACE');
+      setView('SURFACE')
     }
   }
   
