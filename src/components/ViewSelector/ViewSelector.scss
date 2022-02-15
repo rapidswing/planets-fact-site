@@ -78,7 +78,7 @@
     height: 4rem;
     justify-content: left;
     padding: 0 0 0 2rem;
-    width: 88%;
+    width: 100%;
 
     > .not-for-mobile {
       display: flex;
@@ -118,6 +118,27 @@
       &.color-7 {
         background-color: v.$neptune;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .view-selector {
+    margin-top: 2.4rem;
+    padding: 0 0 0 2rem;
+    width: 35rem;
+  }
+
+  .view-option {
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 4.8rem;
+    letter-spacing: 0.257rem;
+    padding-left: 3rem;
+    width: 35rem;
+
+    >span:nth-child(2) {
+      padding-left: 1.2rem;
     }
   }
 }
