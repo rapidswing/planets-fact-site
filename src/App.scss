@@ -109,7 +109,7 @@ html {
   .container {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: min-content 1px 1fr 1fr auto;
+    grid-template-rows: min-content 1px 4fr 2fr 2fr;
     height: 1024px;
     width: 1440px;
   }
@@ -136,5 +136,15 @@ html {
     grid-row: 3 / 5;
     height: 100%;
     order: 4;
+  }
+
+  .summary-card {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    order: 5;
+  }
+
+  .view-selector {
+    order: 6;
   }
 }
