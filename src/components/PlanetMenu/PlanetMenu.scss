@@ -21,9 +21,12 @@
   .planet-menu {
     display: flex;
     flex-direction: row;
-    height: 5rem;
     justify-content: space-around;
     padding: 0rem 4rem 0rem 4rem;
+
+    & .divider-1 {
+      display: flex;
+    }
 
     .planet-menu-item {
       &:hover {
