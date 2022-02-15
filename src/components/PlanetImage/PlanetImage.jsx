@@ -6,7 +6,7 @@ export default function PlanetImage({ planet, view }) {
   const images = require.context('../..', true)
 
   const getImage = (type) => {
-    switch(type) {
+    switch (type) {
       case 'OVERVIEW': {
         return data[planet].images.planet.slice(2)
       }
