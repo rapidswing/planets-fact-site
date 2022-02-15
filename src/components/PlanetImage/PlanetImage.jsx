@@ -20,6 +20,10 @@ export default function PlanetImage({ planet, view }) {
     }
   }
 
+  const getGeologyImage = () => {
+    return data[planet].images.geology.slice(2)
+  }
+
   return (
     <div className="planet-image">
       <img
@@ -27,6 +31,14 @@ export default function PlanetImage({ planet, view }) {
         src={images(`./${getImage(view)}`)}
         alt={data[planet].name}
       />
+      {view === 'SURFACE' ?
+        <img
+          className="geology-overlay"
+          alt={`${data[planet]} geology`}
+          src={images(`./${getGeologyImage()}`)}
+        /> :
+        undefined
+      }
     </div>
   )
 }
