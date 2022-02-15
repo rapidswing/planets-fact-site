@@ -35,11 +35,46 @@
     display: grid;
     gap: 3.3rem;
     grid-template-columns: repeat(8, min-content);
-    margin-top: 2.4rem;
+    margin: 0;
     padding-left: 1.6rem;
 
     & .divider {
       display: none;
+    }
+
+    div:hover {
+      &.color-0 {
+        border-top: solid 0.4rem v.$mercury;
+        padding-bottom: 0.4rem;
+      }
+      &.color-1 {
+        border-top: solid 0.4rem v.$venus;
+        padding-bottom: 0.4rem;
+      }
+      &.color-2 {
+        border-top: solid 0.4rem v.$earth;
+        padding-bottom: 0.4rem;
+      }
+      &.color-3 {
+        border-top: solid 0.4rem v.$mars;
+        padding-bottom: 0.4rem;
+      }
+      &.color-4 {
+        border-top: solid 0.4rem v.$jupiter;
+        padding-bottom: 0.4rem;
+      }
+      &.color-5 {
+        border-top: solid 0.4rem v.$saturn;
+        padding-bottom: 0.4rem;
+      }
+      &.color-6 {
+        border-top: solid 0.4rem v.$uranus;
+        padding-bottom: 0.4rem;
+      }
+      &.color-7 {
+        border-top: solid 0.4rem v.$neptune;
+        padding-bottom: 0.4rem;
+      }
     }
   }
 }

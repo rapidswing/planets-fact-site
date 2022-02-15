@@ -109,7 +109,7 @@ html {
   .container {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: min-content 1px 4fr 2fr 2fr;
+    grid-template-rows: 1fr 1px 4fr 2fr 2fr;
     height: 1024px;
     width: 1440px;
   }
