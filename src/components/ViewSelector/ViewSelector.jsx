@@ -2,7 +2,6 @@ import './ViewSelector.scss'
 
 export default function ViewSelector({ planet, setView, view }) {
   const handleClick = (event) => {
-    console.log(event);
     if (event.target.closest('.overview')) {
       setView('OVERVIEW')
     }

@@ -1,4 +1,4 @@
-import './StatsBox.scss';
+import './StatsBox.scss'
 
 export default function StatsBox({ property, value }) {
   return (

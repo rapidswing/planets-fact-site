@@ -8,14 +8,14 @@ export default function PlanetImage({ planet, view }) {
   const getImage = (type) => {
     switch(type) {
       case 'OVERVIEW': {
-        return data[planet].images.planet.slice(2);
+        return data[planet].images.planet.slice(2)
       }
       case 'STRUCTURE': {
-        return data[planet].images.internal.slice(2);
+        return data[planet].images.internal.slice(2)
       }
       case 'SURFACE':
       default: {
-        return data[planet].images.planet.slice(2);
+        return data[planet].images.planet.slice(2)
       }
     }
   }

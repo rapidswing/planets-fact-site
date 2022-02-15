@@ -1,5 +1,7 @@
 import Icon from 'assets/icon-hamburger.svg'
 
+import './HamburgerMenu.scss'
+
 export default function HamburgerMenu({ toggleHamburger }) {
   return (
     <div className="hamburger-menu" >
