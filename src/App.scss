@@ -55,7 +55,8 @@ html {
   .container {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: min-content min-content 1px 46rem min-content auto;
+    // grid-template-rows: min-content min-content 1px 46rem min-content auto;
+    grid-template-rows: auto auto 1px 46rem auto auto;
     height: 1024px;
     width: 768px;
   }
@@ -110,7 +111,7 @@ html {
   .container {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1px 4fr 2fr 2fr;
+    grid-template-rows: 8rem 1px 4fr 2fr 2fr;
     height: 1024px;
     width: 1440px;
   }
@@ -147,5 +148,9 @@ html {
 
   .view-selector {
     order: 6;
+  }
+
+  .divider-1 {
+    margin-top: 0.5rem;
   }
 }
