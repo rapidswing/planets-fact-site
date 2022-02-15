@@ -3,7 +3,7 @@ import data from 'data.json'
 import './PlanetImage.scss'
 
 export default function PlanetImage({ planet, view }) {
-  const images = require.context('../..', true)
+  const images = require.context('../..', true)  // needed for dynamically loading images from filename
 
   const getImage = (type) => {
     switch (type) {
