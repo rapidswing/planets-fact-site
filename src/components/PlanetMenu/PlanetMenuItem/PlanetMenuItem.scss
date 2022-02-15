@@ -6,7 +6,6 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 2rem 0;
-  // width: 100%;
 }
 
 .planet-dot {
@@ -60,6 +59,10 @@
 
 @media screen and (min-width: 1440px) {
   .planet-menu-item {
-    height: 13rem;
+    height: 12rem;
+  }
+
+  .divider {
+    margin-top: -1rem;
   }
 }
