@@ -92,5 +92,32 @@
     > span:nth-of-type(2) {
       padding-right: 0.5rem;
     }
+
+    &.active-view-option {
+      &.color-0 {
+        background-color: v.$mercury;
+      }
+      &.color-1 {
+        background-color: v.$venus;
+      }
+      &.color-2 {
+        background-color: v.$earth;
+      }
+      &.color-3 {
+        background-color: v.$mars;
+      }
+      &.color-4 {
+        background-color: v.$jupiter;
+      }
+      &.color-5 {
+        background-color: v.$saturn;
+      }
+      &.color-6 {
+        background-color: v.$uranus;
+      }
+      &.color-7 {
+        background-color: v.$neptune;
+      }
+    }
   }
 }
