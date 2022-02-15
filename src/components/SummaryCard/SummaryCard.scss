@@ -70,3 +70,35 @@
     padding: 0;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .container {
+    justify-items: center;
+  }
+  
+  .summary-card {
+    align-self: flex-end;
+    display: grid;
+    height: 34rem;
+    padding-left: 2.4rem;
+    width: 35rem;
+  }
+
+  .summary-name {
+    font-size: 8rem;
+    line-height: 10.4rem;
+    padding-bottom: 0;
+  }
+
+  .summary-content {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    padding-bottom: 1.5rem;
+    width: 35rem;
+  }
+
+  .summary-source {
+    margin: 0;
+    padding-bottom: 0.5rem;
+  }
+}
