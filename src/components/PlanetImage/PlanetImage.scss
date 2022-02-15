@@ -61,7 +61,7 @@
       height: auto;
       bottom: 4rem;
       position: absolute;
-      width: 16rem;
+      width: 12rem;
     }
   }
 
@@ -103,6 +103,13 @@
   .planet-image {
     padding-top: 6rem;
     padding-left: 24rem;
+
+    >img:nth-of-type(2) {
+      height: auto;
+      bottom: 4rem;
+      position: absolute;
+      width: 16rem;
+    }
   }
   
   .planet-image-0 {
