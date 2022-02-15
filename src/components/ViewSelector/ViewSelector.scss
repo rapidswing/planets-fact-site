@@ -22,39 +22,39 @@
   letter-spacing: 0.2rem;
   width: 8rem;
 
-  &.active {
-    border-bottom: solid 0.4rem;
-    padding-top: 0.4rem;
-  }
-
-  &.color-0 {
-    border-color: v.$mercury;
-  }
-  &.color-1 {
-    border-color: v.$venus;
-  }
-  &.color-2 {
-    border-color: v.$earth;
-  }
-  &.color-3 {
-    border-color: v.$mars;
-  }
-  &.color-4 {
-    border-color: v.$jupiter;
-  }
-  &.color-5 {
-    border-color: v.$saturn;
-  }
-  &.color-6 {
-    border-color: v.$uranus;
-  }
-  &.color-7 {
-    border-color: v.$neptune;
-  }
-
   .not-for-mobile {
     display: none;
   }
+}
+
+.active-view-option {
+  border-bottom: solid 0.4rem;
+  padding-top: 0.4rem;
+}
+
+.color-0 {
+  border-color: v.$mercury;
+}
+.color-1 {
+  border-color: v.$venus;
+}
+.color-2 {
+  border-color: v.$earth;
+}
+.color-3 {
+  border-color: v.$mars;
+}
+.color-4 {
+  border-color: v.$jupiter;
+}
+.color-5 {
+  border-color: v.$saturn;
+}
+.color-6 {
+  border-color: v.$uranus;
+}
+.color-7 {
+  border-color: v.$neptune;
 }
 
 @media screen and (min-width: 768px) {
@@ -64,5 +64,8 @@
     height: auto;
   }
   
-
+  .view-option {
+    border: 0;
+    padding: 0;
+  }
 }

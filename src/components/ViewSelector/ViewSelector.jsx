@@ -17,17 +17,17 @@ export default function ViewSelector({ planet, setView, view }) {
   return (
     <div className="view-selector" onClick={handleClick}>
       <div 
-        className={`view-option overview ${view === 'OVERVIEW' ? `active color-${planet}` : ''}`}
+        className={`view-option overview ${view === 'OVERVIEW' ? `active-view-option color-${planet}` : ''}`}
       >
         <span className="not-for-mobile">01</span><span>OVERVIEW</span>
       </div>
       <div
-        className={`view-option structure ${view === 'STRUCTURE' ? `active color-${planet}` : ''}`}
+        className={`view-option structure ${view === 'STRUCTURE' ? `active-view-option color-${planet}` : ''}`}
       >
         <span className="not-for-mobile">02</span><span className="not-for-mobile">INTERNAL</span><span>STRUCTURE</span>
       </div>
       <div
-        className={`view-option surface ${view === 'SURFACE' ? `active color-${planet}` : ''}`}
+        className={`view-option surface ${view === 'SURFACE' ? `active-view-option color-${planet}` : ''}`}
       >
         <span className="not-for-mobile">03</span><span>SURFACE</span><span className="not-for-mobile">GEOLOGY</span>
       </div>
