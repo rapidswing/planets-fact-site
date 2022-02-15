@@ -4,8 +4,7 @@
   align-items: center;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 2rem 0;
+  padding: 1.8rem 0;
 }
 
 .planet-dot {
@@ -21,11 +20,12 @@
   font-weight: bold;
   letter-spacing: 0.136rem;
   line-height: 2.5rem;
-  padding-left: 2rem;
-  padding-top: 0.2rem;
+  margin-top: 0.35rem;
+  padding-left: 2.2rem;
 }
 
 .planet-chevron {
+  margin-right: 0.6rem;
   padding-bottom: 0.3rem;
 }
 
