@@ -56,6 +56,13 @@
   .planet-image {
     height: 46rem;
     margin-top: 0.75rem;
+    
+    >img:nth-of-type(2) {
+      height: auto;
+      bottom: 4rem;
+      position: absolute;
+      width: 16rem;
+    }
   }
 
   .planet-image-0 {
