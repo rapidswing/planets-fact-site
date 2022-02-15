@@ -76,7 +76,7 @@ html {
   .planet-menu {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
-    padding-top: 3rem;
+    margin-top: 1.4rem;
   }
 
   .divider {
@@ -105,18 +105,20 @@ html {
   .view-selector {
     grid-column: 2 / 3;
     grid-row: 5 / 6;
+    padding-top: 0;
+    margin-top: 8.2rem;
   }
 
   .stats-bar {
     grid-column: 1 / 3;
     grid-row: 6 / 7;
+    margin-bottom: 0.8rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .container {
     display: grid;
-    // grid-template-columns: 50% 50%;
     grid-template-columns: 1fr 1fr 1fr 3fr;
     grid-template-rows: 8rem 1px 7fr 2fr 2fr;
     height: 1024px;
@@ -144,10 +146,8 @@ html {
   }
 
   .planet-image {
-    // align-self: flex-end;
     grid-column: 2 / 4;
     grid-row: 3 / 6;
-    // margin: 0 0 0 auto;
     margin: 0;
     padding: 0;
   }
