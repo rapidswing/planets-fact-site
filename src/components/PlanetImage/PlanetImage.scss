@@ -4,5 +4,108 @@
   align-items: center;
   display: flex;
   height: 30rem;
-  justify-content: center;;
+  justify-content: center;
+}
+
+.planet-image-0 {
+  height: 111px;
+  width: 111px;
+}
+.planet-image-1 {
+  height: 154px;
+  width: 154px;
+}
+.planet-image-2 {
+  height: 173px;
+  width: 173px;
+}
+.planet-image-3 {
+  height: 129px;
+  width: 129px;
+}
+.planet-image-4 {
+  height: 224px;
+  width: 224px;
+}
+.planet-image-5 {
+  height: 256px;
+  width: 256px;
+}
+.planet-image-6 {
+  height: 176px;
+  width: 176px;
+}
+.planet-image-7 {
+  height: 173px;
+  width: 173px;
+}
+
+@media screen and (min-width: 768px) {
+  .planet-image-0 {
+    height: 184px;
+    width: 184px;
+  }
+  .planet-image-1 {
+    height: 184px;
+    width: 184px;
+  }
+  .planet-image-2 {
+    height: 285px;
+    width: 285px;
+  }
+  .planet-image-3 {
+    height: 213px;
+    width: 213px;
+  }
+  .planet-image-4 {
+    height: 369px;
+    width: 369px;
+  }
+  .planet-image-5 {
+    height: 422px;
+    width: 422px;
+  }
+  .planet-image-6 {
+    height: 290px;
+    width: 290px;
+  }
+  .planet-image-7 {
+    height: 285px;
+    width: 285px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .planet-image-0 {
+    height: 290px;
+    width: 290px;
+  }
+  .planet-image-1 {
+    height: 400px;
+    width: 400px;
+  }
+  .planet-image-2 {
+    height: 450px;
+    width: 450px;
+  }
+  .planet-image-3 {
+    height: 336px;
+    width: 336px;
+  }
+  .planet-image-4 {
+    height: 582px;
+    width: 582px;
+  }
+  .planet-image-5 {
+    height: 666px;
+    width: 666px;
+  }
+  .planet-image-6 {
+    height: 458px;
+    width: 458px;
+  }
+  .planet-image-7 {
+    height: 450px;
+    width: 450px;
+  }
 }
