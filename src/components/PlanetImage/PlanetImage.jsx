@@ -18,7 +18,6 @@ export default function PlanetImage({ planet, view }) {
         return data[planet].images.planet.slice(2);
       }
     }
-    
   }
 
   return (
