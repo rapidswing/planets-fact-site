@@ -93,6 +93,10 @@
       padding-right: 0.5rem;
     }
 
+    &:hover {
+      background-color: rgba(v.$hover-gray, 0.2);
+    }
+
     &.active-view-option {
       &.color-0 {
         background-color: v.$mercury;
