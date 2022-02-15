@@ -27,21 +27,6 @@
     & .divider {
       display: none;
     }
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .planet-menu {
-    display: grid;
-    gap: 3.3rem;
-    grid-template-columns: repeat(8, min-content);
-    height: 12rem;
-    margin: 0;
-    padding-left: 1.6rem;
-
-    & .divider {
-      display: none;
-    }
 
     div:hover {
       &.color-0 {
@@ -76,6 +61,21 @@
         border-top: solid 0.4rem v.$neptune;
         padding-bottom: 0.4rem;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .planet-menu {
+    display: grid;
+    gap: 3.3rem;
+    grid-template-columns: repeat(8, min-content);
+    height: 12rem;
+    margin: 0;
+    padding-left: 1.6rem;
+
+    & .divider {
+      display: none;
     }
   }
 }
