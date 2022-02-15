@@ -50,6 +50,8 @@
 @media screen and (min-width: 768px) {
   .summary-card {
     align-items: flex-start;
+    display: flex;
+    flex-direction: column;
     padding: 0 0 0 4rem;
   }
 
@@ -61,5 +63,10 @@
 
   .summary-content {
     text-align: left;
+  }
+
+  .summary-source {
+    margin-top: auto;
+    padding: 0;
   }
 }
