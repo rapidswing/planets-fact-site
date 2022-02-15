@@ -46,3 +46,19 @@
     line-height: 3.1rem;
   }
 }
+
+@media screen and (min-width: 1440px) {  
+  .stats-box {
+    height: 12.8rem;
+    padding: 1.4rem 2.2rem 2.2rem 2.2rem;
+    width: 25.5rem;
+  }
+
+  .stats-property {
+    font-size: 1.1rem;
+  }
+
+  .stats-value {
+    font-size: 4rem;
+  }
+}

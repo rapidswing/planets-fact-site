@@ -19,3 +19,10 @@
     padding-right: 4rem;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .stats-bar {
+    gap: 3rem;
+    padding-bottom: 5rem;
+  }
+}
