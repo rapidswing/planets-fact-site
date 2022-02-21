@@ -1,6 +1,7 @@
 @use "utils/variables" as v;
 
 .view-selector {
+  background: v.$bg-color;
   display: flex;
   flex-direction: row;
   height: 5rem;
